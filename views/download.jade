@@ -1,0 +1,10 @@
+extends layout
+
+block content
+	script(src='javascripts/download.js')
+	.container
+		.row
+			.col-xs-6
+				button#pdf_download.btn.btn-danger(type='button') Download as Pdf
+			.col-xs-6
+				button#word_download.btn.btn-primary(type='button') Download as Word
