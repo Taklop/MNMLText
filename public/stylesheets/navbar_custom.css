@@ -4,11 +4,12 @@
 {
     color: #FFFFFF;
     background-color: #333A56;
+    font-family: 'Oswald', sans-serif;
 }
 
 .navbar_custom .navbar-brand
 {
     color: #FFFFFF;
-    font-size: 30px;
+    font-size: 40px;    
 }
 
