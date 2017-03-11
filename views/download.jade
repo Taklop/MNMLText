@@ -1,0 +1,11 @@
+extends layout
+
+block content
+	script(src='javascripts/download.js')
+	.container
+		.row
+			.col-xs-6
+				input.btn.btn-danger(type='button', value = 'Download as PDF' onclick="location.href = 'download/pdf';") 
+			.col-xs-6
+				input.btn.btn-primary(type='button', value = 'Download as Word', onclick="location.href = 'download/word';") 
+			
