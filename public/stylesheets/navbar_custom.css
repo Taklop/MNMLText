@@ -1,0 +1,7 @@
+/* CSS used here will be applied after bootstrap.css */
+
+.navbar_custom 
+{
+    color: #FFFFFF;
+    background-color: #333A56;
+}
