@@ -5,6 +5,7 @@ block content
 	.container
 		.row
 			.col-xs-6
-				button#pdf_download.btn.btn-danger(type='button') Download as Pdf
+				input.btn.btn-danger(type='button', value = 'Download as PDF' onclick="location.href = 'download/pdf';") 
 			.col-xs-6
-				button#word_download.btn.btn-primary(type='button') Download as Word
+				input.btn.btn-primary(type='button', value = 'Download as Word', onclick="location.href = 'download/word';") 
+			

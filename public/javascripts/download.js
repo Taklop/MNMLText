@@ -1,7 +1,9 @@
-$("#pdf_download").click(function (){
+$("#pdf_download").click(function ()
+{
 	console.log("pdf wants to download");
 	window.open('/pdf');
 });
-$("#word_download").click(function (){
+$("#word_download").click(function ()
+{
 	window.open('/word');
 });
