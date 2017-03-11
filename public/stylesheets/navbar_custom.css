@@ -5,3 +5,10 @@
     color: #FFFFFF;
     background-color: #333A56;
 }
+
+.navbar_custom .navbar-brand
+{
+    color: #FFFFFF;
+    font-size: 30px;
+}
+
