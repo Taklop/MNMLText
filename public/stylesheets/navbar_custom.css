@@ -1,0 +1,15 @@
+/* CSS used here will be applied after bootstrap.css */
+
+.navbar_custom 
+{
+    color: #FFFFFF;
+    background-color: #333A56;
+    font-family: 'Oswald', sans-serif;
+}
+
+.navbar_custom .navbar-brand
+{
+    color: #FFFFFF;
+    font-size: 40px;    
+}
+
