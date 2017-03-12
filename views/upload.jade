@@ -11,20 +11,11 @@ block content
     .panel-body
       
       // Drop Zone      
-      form.dropzone(type='file', action='/file-upload')        
-          img(src='/images/Drop_File.svg', alt='Please Drop a file Here', style='width:300px;height:228px;')   
-
-      // Standard Form
-      h4 Or, select files from your computer
-      form#js-upload-form(action='', method='post', enctype='multipart/form-data')
-        .form-inline
-          .form-group
-            input#js-upload-files(type='file', name='files[]', multiple='')
-          button#js-upload-submit.btn.btn-sm.btn-primary(type='submit') Upload files
-      // Progress Bar
-      .progress
-        .progress-bar(role='progressbar', aria-valuenow='60', aria-valuemin='0', aria-valuemax='100', style='width: 60%;')
-          span.sr-only 60% Complete    
+      form.dropzone(type='file', action='/file-upload')       
+        .dz-message              
+          img(src='/images/Drop_File.svg', alt='Please Drop a file Here', style='width:300px;height:300px')   
+   
+      
 // /container
 
 
