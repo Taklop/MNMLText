@@ -1,0 +1,22 @@
+//Code sourced from http://ibootstrap.net/Snippets/IDXbSx/Drag-and-Drop-File-Upload#
+//And using http://www.dropzonejs.com/
+extends layout
+
+block content
+  
+  .container
+  script(src='javascripts/dropzone.js') 
+  
+  .panel.panel-default    
+    .panel-body
+      
+      // Drop Zone      
+      form.dropzone(type='file', action='/file-upload')       
+        .dz-message              
+          img(src='/images/Drop_File.svg', alt='Please Drop a file Here', style='width:300px;height:300px')   
+   
+      
+// /container
+
+
+
