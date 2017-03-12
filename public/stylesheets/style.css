@@ -6,13 +6,23 @@ body
   margin-bottom: 0;
 }
 
-    /* layout.css Style */
+  
 .upload-drop-zone 
 {
+  height: 300px;
+  border-width: 3px;
+  margin-bottom: 20px;
+}
+.dropzone
+{
+  background-color:#52658F;
+   color: #111111;
   height: 300px;
   border-width: 2px;
   margin-bottom: 20px;
 }
+
+
 
 /* skin.css Style*/
 .upload-drop-zone 

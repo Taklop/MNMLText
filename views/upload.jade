@@ -3,15 +3,18 @@
 extends layout
 
 block content
-  script(src='javascripts/dropzone.js')   
+  
   .container
+  script(src='javascripts/dropzone.js') 
+  
   .panel.panel-default    
     .panel-body
       
       // Drop Zone      
-      form#drop-zone.upload-drop-zone.dropzone(type='file', action='/file-upload')        
-        img(src='/images/Drop_File.svg', alt='asd', style='width:300px;height:228px;')
-        // Standar Form
+      form.drop-zone.upload-drop-zone.dropzone(type='file', action='/file-upload')        
+        img(src='/images/Drop_File.svg', alt='Please Drop a file Here', style='width:300px;height:228px;')   
+
+      // Standard Form
       h4 Or, select files from your computer
       form#js-upload-form(action='', method='post', enctype='multipart/form-data')
         .form-inline
