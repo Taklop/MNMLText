@@ -6,37 +6,16 @@ body
   margin-bottom: 0;
 }
 
-  
-.upload-drop-zone 
+.dropzone
 {
   height: 300px;
   border-width: 3px;
   margin-bottom: 20px;
-}
-.dropzone
-{
   background-color:#52658F;
-   color: #111111;
-  height: 300px;
-  border-width: 2px;
-  margin-bottom: 20px;
-}
-
-
-
-/* skin.css Style*/
-.upload-drop-zone 
-{
-  background-color:#52658F;
-  color: #ffffff;  
+  color: #111111;  
   font-size: 30px; 
   border-style: dashed;
-  border-color: #ffffff;
-  line-height: 300px;
+  border-color: #ffffff;  
   text-align: center
 }
-.upload-drop-zone.drop 
-{
-  color: #222;
-  border-color: #222;
-}
+
