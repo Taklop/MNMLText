@@ -18,11 +18,10 @@ body
 .upload-drop-zone 
 {
   background-color:#52658F;
-  color: #ffffff;
-  font-family: 'Lucida Grande', 'sans-serif';
+  color: #ffffff;  
   font-size: 30px; 
   border-style: dashed;
-  border-color: #52658F;
+  border-color: #ffffff;
   line-height: 300px;
   text-align: center
 }
