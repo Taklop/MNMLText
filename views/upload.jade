@@ -11,8 +11,9 @@ block content
     .panel-body
       
       // Drop Zone      
-      form.drop-zone.upload-drop-zone.dropzone(type='file', action='/file-upload')        
-        img(src='/images/Drop_File.svg', alt='Please Drop a file Here', style='width:300px;height:228px;')   
+      form.drop-zone.upload-drop-zone
+        .dropzone(type='file', action='/file-upload')        
+          img(src='/images/Drop_File.svg', alt='Please Drop a file Here', style='width:300px;height:228px;')   
 
       // Standard Form
       h4 Or, select files from your computer
