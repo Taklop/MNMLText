@@ -2,21 +2,18 @@
 //And using http://www.dropzonejs.com/
 extends layout
 
+
+
 block content
-  
-  .container
-  script(src='javascripts/dropzone.js') 
-  
-  .panel.panel-default    
-    .panel-body
-      
-      // Drop Zone      
-      form.dropzone(type='file', action='/file-upload')       
-        .dz-message              
-          img(src='/images/Drop_File.svg', alt='Please Drop a file Here', style='width:300px;height:300px')   
-   
-      
-// /container
-
-
-
+	script(src='javascripts/dropzone.js')
+	.container
+		.row
+			.col-xs-12
+				.panel.panel-default
+					.panel-body.shadebackground
+						
+						// Drop Zone
+						form.dropzone(type='file', action='/file-upload')
+							.dz-message
+								img(src='/images/Drop_File.svg', alt='Please Drop a file Here', style='width:300px;height:300px')
+			

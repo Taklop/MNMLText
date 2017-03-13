@@ -1,4 +1,4 @@
-body 
+body
 {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
@@ -9,17 +9,80 @@ body
 .dropzone
 {
   height: 300px;
-  border-width: 4px;  
+  border-width: 4px;
   background-color:#52658F;
-  color: #111111;  
+  color: #111111;
   border-style: dashed;
-  border-color: #414A64;  
+  border-color: #414A64;
   text-align: center;
-  padding: 1% 10%;  
+  padding: 1% 10%;
+}
+.exportzone
+{
+  height: 300px;
+		width: 77%;
+  border: 2px solid #AAA;
+  background-color: white;
+  color: black;
+	margin: 0 auto;
+  text-align: center;
+}
+.shadebackground{
+	background-color: #5d77af;
 }
 
+.buttonDownload {
+	font-size: 30px;
+	border: 0px;
+   background-color: white;
+   cursor: pointer;
+	 float: left;
+	 height: 100%;
+	 border-right: 2px solid #AAA;
+	 padding-left: 3%;
+	 padding-right: 3%;
+}
 
+.wordButton:hover {
+   background-color: #416FB2;
+   color: white;
+}
+.pdfButton:hover{
+	background-color: #EE3D23;
+	color: white;
+}
+.third{
+	height: 33.33%;
+}
+.dividingBorders{
+	border-bottom: 2px solid #AAA;
+}
+.btnRestart{
+	float: right;
+	margin-right: 5%;
+	margin-top: 2%;
+	background-color: white;
+	border: 2px solid black;
+}
+.congratsText{
+	text-align: left;
+	font-size: 30px;
+	margin-left: 3%;
+	padding-top: 4%;
+}
+.largesymbol{
+	font-size: 70px;
+}
+.squareButton{
+	width: 100.5px;
+}
 
-
-
-
+.dropboxButton:hover{
+	color: #007EE5;
+}
+.googleButton:hover{
+	color: #FFD14A;
+}
+.noborder{
+	border: 0px;
+}

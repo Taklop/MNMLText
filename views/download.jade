@@ -1,11 +1,24 @@
 extends layout
 
 block content
-	script(src='javascripts/download.js')
 	.container
 		.row
-			.col-xs-6
-				input.btn.btn-danger(type='button', value = 'Download as PDF' onclick="location.href = 'download/pdf';") 
-			.col-xs-6
-				input.btn.btn-primary(type='button', value = 'Download as Word', onclick="location.href = 'download/word';") 
-			
+			.col-xs-12.centered
+				.exportzone
+					.third
+						p.congratsText Congratulations! Now you have a great summary, enjoy ;)
+					.third.dividingBorders
+						button.btnRestart.btn-lg(type='button', value = 'Start Over' onclick="location.href = '/upload';")
+							i.fa.fa-undo(aria-hidden='true')
+							|   Start Over
+					.third
+						button.buttonDownload.pdfButton(type='button', value = 'Download as PDF' onclick="location.href = 'download/pdf';")
+							i.fa.fa-file-pdf-o(aria-hidden='true')
+							|   Download as PDF
+						button.buttonDownload.wordButton(type='button', value = 'Download as Word', onclick="location.href = 'download/word';")
+							i.fa.fa-file-word-o(aria-hidden='true')
+							|   Download as Word
+						button.buttonDownload.dropboxButton.squareButton(type='button', value = 'Download as Word', onclick="window.open('https://www.dropbox.com/?landing=cntl')")
+							i.fa.fa-dropbox(aria-hidden='true')
+						button.noborder.buttonDownload.googleButton.squareButton(type='button', value = 'Download as Word', onclick="window.open('https://www.google.com/drive/')")
+							i.fa.fa-google(aria-hidden='true')
