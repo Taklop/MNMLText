@@ -8,6 +8,9 @@ block content
 	script(src='javascripts/dropzone.js')
 	.container
 		.row
+			.col-xs-12.centered
+				P.description Summarise your lecture slides into text for studying in seconds!
+		.row
 			.col-xs-12
 				.panel.panel-default
 					.panel-body.shadebackground
@@ -15,5 +18,14 @@ block content
 						// Drop Zone
 						form.dropzone(type='file', action='/file-upload')
 							.dz-message
-								img(src='/images/Drop_File.svg', alt='Please Drop a file Here', style='width:300px;height:300px')
-			
+								i.fa.fa-file-text-o.fa-4x(aria-hidden='true')
+								p Drop File Here
+								u click to select file
+		.row
+			.centered
+				.col-xs-4
+					img(src='/images/textbox-info.svg', alt='info1')
+				.col-xs-4
+					img(src='/images/filetype-info.svg', alt='info2')
+				.col-xs-4
+					img(src='/images/serverside-info.svg', alt='info3')
