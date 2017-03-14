@@ -1,17 +1,30 @@
 extends layout
 
 block content
-	#editor
-		p Hello World!
-		p
-			| Some initial 
-			strong bold
-			|  text
-		p
-			br
+	.container
+		.row
+			.col-xs-6
+				embed(src='/originalFiles/Empirical-Studies.pdf', width='600', height='500', alt='pdf', pluginspage='http://www.adobe.com/products/acrobat/readstep2.html')
+			.col-xs-6
+				#editor2
+					p How to Conduct an Empirical Study
+					p Choose research questions enough to be interesting
+					p Specify the scope (e.g. target population)
+					br
+					p Specify methodlogy, i.e. how we get data
+					p For example:
+					p Define tasks (i.e. what do users do during the study)
+					p Define variables and specify how they are measured
+					p specify hypotheses based on the variables
+					p Create a script for the study (step-by-step guide)
+					p Conduct a pilot study and revise methodlogy
+					p Use script to collect data (e.g. from participants)
+					p Analyse the data, test hypotheses, interpret & discuss
+
+					br
 
 	script(src='https://cdn.quilljs.com/1.2.2/quill.js')
 	script.
-		var quill = new Quill('#editor', {
+		var quill = new Quill('#editor2', {
 		theme: 'snow'
 		});
