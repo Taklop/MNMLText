@@ -1,0 +1,17 @@
+extends layout
+
+block content
+	#editor
+		p Hello World!
+		p
+			| Some initial 
+			strong bold
+			|  text
+		p
+			br
+
+	script(src='https://cdn.quilljs.com/1.2.2/quill.js')
+	script.
+		var quill = new Quill('#editor', {
+		theme: 'snow'
+		});

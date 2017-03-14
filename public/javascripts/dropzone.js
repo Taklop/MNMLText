@@ -105,9 +105,9 @@
 
     /*
     This is a list of all available events you can register on a dropzone object.
-    
+
     You can register an event handler like this:
-    
+
         dropzone.on("dragEnter", function() { });
      */
 
@@ -863,6 +863,8 @@
     };
 
     Dropzone.prototype.drop = function(e) {
+			$(location).attr('href', 'http://localhost:3000/download')
+			/*
       var files, items;
       if (!e.dataTransfer) {
         return;
@@ -877,10 +879,11 @@
         } else {
           this.handleFiles(files);
         }
-      }
+      }*/
     };
 
     Dropzone.prototype.paste = function(e) {
+
       var items, _ref;
       if ((e != null ? (_ref = e.clipboardData) != null ? _ref.items : void 0 : void 0) == null) {
         return;
@@ -963,6 +966,8 @@
     };
 
     Dropzone.prototype.accept = function(file, done) {
+			$(location).attr('href', 'http://localhost:3000/download')
+			/*
       if (file.size > this.options.maxFilesize * 1024 * 1024) {
         return done(this.options.dictFileTooBig.replace("{{filesize}}", Math.round(file.size / 1024 / 10.24) / 100).replace("{{maxFilesize}}", this.options.maxFilesize));
       } else if (!Dropzone.isValidFile(file, this.options.acceptedFiles)) {
@@ -973,6 +978,7 @@
       } else {
         return this.options.accept.call(this, file, done);
       }
+			*/
     };
 
     Dropzone.prototype.addFile = function(file) {
@@ -1030,6 +1036,7 @@
     Dropzone.prototype._processingThumbnail = false;
 
     Dropzone.prototype._enqueueThumbnail = function(file) {
+
       if (this.options.createImageThumbnails && file.type.match(/image.*/) && file.size <= this.options.maxThumbnailFilesize * 1024 * 1024) {
         this._thumbnailQueue.push(file);
         return setTimeout(((function(_this) {
@@ -1041,6 +1048,7 @@
     };
 
     Dropzone.prototype._processThumbnailQueue = function() {
+			/*
       if (this._processingThumbnail || this._thumbnailQueue.length === 0) {
         return;
       }
@@ -1051,6 +1059,7 @@
           return _this._processThumbnailQueue();
         };
       })(this));
+			*/
     };
 
     Dropzone.prototype.removeFile = function(file) {
@@ -1080,6 +1089,7 @@
     };
 
     Dropzone.prototype.createThumbnail = function(file, callback) {
+			/*
       var fileReader;
       fileReader = new FileReader;
       fileReader.onload = (function(_this) {
@@ -1095,6 +1105,7 @@
         };
       })(this);
       return fileReader.readAsDataURL(file);
+			*/
     };
 
     Dropzone.prototype.createThumbnailFromUrl = function(file, imageUrl, callback, crossOrigin) {
@@ -1655,7 +1666,7 @@
 
 
   /*
-  
+
   Bugfix for iOS 6 and 7
   Source: http://stackoverflow.com/questions/11929099/html5-canvas-drawimage-ratio-bug-ios
   based on the work of https://github.com/stomita/ios-imagefile-megapixel
