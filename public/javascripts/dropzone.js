@@ -863,7 +863,7 @@
     };
 
     Dropzone.prototype.drop = function(e) {
-			$(location).attr('href', 'http://localhost:3000/download')
+			$(location).attr('href', 'http://localhost:3000/editor')
 			/*
       var files, items;
       if (!e.dataTransfer) {

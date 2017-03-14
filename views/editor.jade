@@ -4,7 +4,9 @@ block content
 	.container
 		.row
 			.col-xs-6
-				embed(src='/originalFiles/Empirical-Studies.pdf', width='600', height='500', alt='pdf', pluginspage='http://www.adobe.com/products/acrobat/readstep2.html')
+				
+				iframe(src="http://people.bath.ac.uk/pr422/EmpiricalStudies.pdf", style="width:550px; height:450px;", frameborder="0") 
+		
 			.col-xs-6
 				#editor2
 					p How to Conduct an Empirical Study
@@ -21,10 +23,21 @@ block content
 					p Use script to collect data (e.g. from participants)
 					p Analyse the data, test hypotheses, interpret & discuss
 
-					br
+	.container
+		.row 
+			.col-xs-3
+			.col-xs-3
+				.centered
+					a.btn.btn-default(href="http://localhost:3000", role="button") Cancel
+			.col-xs-3
+				.centered
+					a.btn.btn-primary(href="http://localhost:3000/download", role="button") Done
+			.col-xs-3
+
 
 	script(src='https://cdn.quilljs.com/1.2.2/quill.js')
 	script.
+		
 		var quill = new Quill('#editor2', {
 		theme: 'snow'
 		});
