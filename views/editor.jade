@@ -1,14 +1,17 @@
+//http://stackoverflow.com/questions/29008914/how-to-add-image-in-quill-js
 extends layout
 
 block content
+	script(src='//cdn.quilljs.com/1.2.3/quill.js')
+	script(src='//cdn.quilljs.com/1.2.3/quill.min.js')
 	.container
 		.row
 			.col-xs-6
 				
-				iframe(src="http://people.bath.ac.uk/pr422/EmpiricalStudies.pdf", style="width:550px; height:450px;", frameborder="0") 
+				iframe(src="http://people.bath.ac.uk/pr422/EmpiricalStudies.pdf", style="width:550px; height:515px;", frameborder="0") 
 		
 			.col-xs-6
-				#editor2
+				#editor
 					p How to Conduct an Empirical Study
 					p Choose research questions 
 					p Specific enough to be answerable, general enough to be interesting
@@ -35,10 +38,30 @@ block content
 					a.btn.btn-primary(href="http://localhost:3000/download", role="button") Done
 			.col-xs-3
 
-
-	script(src='https://cdn.quilljs.com/1.2.2/quill.js')
 	script.
-		
-		var quill = new Quill('#editor2', {
+		var toolbarOptions = [
+			[{ 'size': ['small', false, 'large', 'huge'] }],  
+			[{ 'header': [1, 2, 3, 4, 5, 6, false] }],
+			[{ 'font': [] }],
+			['bold', 'italic', 'underline', 'strike'],   
+			[{ 'list': 'ordered'}, { 'list': 'bullet' }], 
+			[{ 'color': [] }, { 'background': [] }],      
+			[{ 'align': [] }],
+			[{ 'indent': '-1'}, { 'indent': '+1' }],   
+			['blockquote', 'code-block'],
+			[{ 'script': 'sub'}, { 'script': 'super' }],      
+			[  'image', 'formula' ],          
+			['clean']                                       
+			];
+		var quill = new Quill('#editor', {
+		modules: {
+			toolbar: toolbarOptions
+		},
 		theme: 'snow'
 		});
+
+	style.
+		#editor {
+			height: 450px;
+		}
+
