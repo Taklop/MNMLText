@@ -20,19 +20,21 @@ body
 }
 .exportzone
 {
-  height: 300px;
+  height: 250px;
 		width: 77%;
-  border: 2px solid #AAA;
+  border: 2px solid #52658F;
   background-color: white;
   color: black;
 	margin: 0 auto;
   text-align: center;
+  
 }
 .shadebackground{
 	background-color: #5d77af;
 }
 
 .buttonDownload {
+	font-family: 'Cabin', sans-serif;
 	font-size: 30px;
 	border: 0px;
    background-color: white;
@@ -41,7 +43,7 @@ body
 	 height: 100%;
 	 border-right: 2px solid #AAA;
 	 padding-left: 3%;
-	 padding-right: 3%;
+	 padding-right: 4.5%;
 }
 
 .wordButton:hover {
@@ -56,9 +58,10 @@ body
 	height: 33.33%;
 }
 .dividingBorders{
-	border-bottom: 2px solid #AAA;
+	border-bottom: 2px solid #52658F;
 }
 .btnRestart{
+	font-family: 'Cabin', sans-serif;
 	float: right;
 	margin-right: 5%;
 	margin-top: 2%;
@@ -66,8 +69,9 @@ body
 	border: 2px solid black;
 }
 .congratsText{
+	font-family: 'Cabin', sans-serif;
 	text-align: left;
-	font-size: 30px;
+	font-size: 25px;
 	margin-left: 3%;
 	padding-top: 4%;
 }
@@ -75,7 +79,7 @@ body
 	font-size: 70px;
 }
 .squareButton{
-	width: 100.5px;
+	width: 101.5px;
 }
 
 .dropboxButton:hover{
@@ -105,4 +109,12 @@ body
 .fa-4x{
 	margin-top: 4%;
 	margin-bottom: 3%;
+}
+
+.des-font{
+	font-family: 'Cabin', sans-serif;
+}
+
+.des-file{
+	font-size:16px;
 }
