@@ -1,11 +1,9 @@
-body
-{
+body{
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 .navbar{
   margin-bottom: 0;
 }
-
 .dropzone
 {
   height: 300px;
