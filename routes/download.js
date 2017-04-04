@@ -1,20 +1,19 @@
 var express = require('express');
-var path = require('path');
 var router = express.Router();
 
 /* GET home page. */
-router.get('/', function(req, res, next) 
+router.get('/', function(req, res, next)
 {
-  res.render('download', { title: 'download' });
+  res.render('download', { title: 'Download' });
 });
 
-router.get('/pdf', function(req, res, next) 
+router.get('/pdf', function(req, res, next)
 {
-	res.download('files/pdfSummary.pdf', 'pdfSummary.pdf');
+	res.download('files/Cloud\ Computing.pdf', 'Cloud\ Computing.pdf');
 });
-router.get('/word', function(req, res, next) 
+router.get('/word', function(req, res, next)
 {
-	res.download('files/wordSummary.docx', 'wordSummary.docx');
+	res.download('files/Cloud\ Computing.docx', 'Cloud\ Computing.docx');
 });
 
 module.exports = router;

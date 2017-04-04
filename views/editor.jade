@@ -1,0 +1,181 @@
+extends layout
+
+block content
+	.container
+		.row#addMargin
+			.col-xs-6
+				iframe(src="http://summarizeme.info/orgininalFiles/DatabaseLecture7CloudComputing.pdf", style="width:550px; height:636px;") 
+		
+			.col-xs-6
+				#editor
+					h2
+						strong Cloud Computing
+					p
+						| Cloud computing is best described as "a model for enabling convenient, on-demand network access to a shared pool of configurable computing resources that can be rapidly provisioned and released with minimal management effort or service provider interaction" National Institute of Standards and Technology (NIST)
+					p  
+					p
+						strong Types of Service Provision
+					p
+						| Services are hosted remotely and accessed over a network through a customer's web browser, rather than being installed locally on a customer's computer
+					p  
+					p
+						| There are 
+						strong 3 different types of service provision
+						| . These three elements are together referred to as the
+						strong  cloud computing stack 
+					p  
+					ol
+						li
+							strong SaaS
+							|  (software as a service) refers to the provision of software applications in the cloud
+						li
+							strong PaaS
+							|  (platform as a service) refers to the provision of services that enable customers to deploy, in the cloud, applications created using programming languages and tools supported by the supplier
+						li
+							strong IaaS 
+							| (infrastructure as a service) refers to services providing computing processing power, storage space and network capacity, which enable customers to run arbitrary software (including operating systems and applications) in the cloud
+					p  
+					p
+						strong Stats of the cloud model
+					p
+						| The cloud model enables customers to access, from any computer connected to the internet a multitude of IT services rather than being limited to using locally installed software and being dependent on the storage capacity of their local computer network
+					p  
+					p
+						| This model of IT service provision is on that is 
+						strong growing exponentially
+					p  
+					p
+						| It is estimated that one third of all revenue generated in the software market today relates to the delivery of cloud computing services, and the value of the UK cloud computing market reached around 
+						strong 10.5 billion pounds in 2016
+						| , up fro 6 billion in 2010
+					p  
+					p
+						| 40% of European companies already use email from the cloud, 35% use security solution and 30% percent use databases, office productivity and collaboration tools
+					p  
+					p
+						strong Cloud Formations
+					p 4 types of cloud formations:
+					ol
+						li
+							strong Public Clouds 
+							| - available to the public at large
+						li
+							strong Private Clouds 
+							| - single customer whose primary concern is data security
+						li
+							strong Hybrid Cloud - 
+							| very sensitive data stored locally, less sensitive data stored in the cloud. 
+							u Cloud Bursting
+							|  - using cloud server and storage to meet peak demands
+						li
+							strong Community Clouds 
+							| - limited number of customers with similar IT requirements share an infrastructure provided by a single supplier
+					p  
+					p
+						strong Advantages of Cloud Computing
+					ol
+						li
+							strong Access to resources
+							|  - processing power of multiple remote computers
+						li
+							strong Mobility 
+							| - services accessed form anywhere as they are web-based
+						li
+							strong Scalable
+							|  - easy to increase or decrease the amount of service
+						li
+							strong Data Security and Storage
+							|  - for most companies, data security and data storage offered by data centres is far superior to that which can be afforded in-house
+						li
+							strong Cost Saving
+							|  - rental agreement so no large upfront expense- Also, need to maintain less in-house expertise
+						li
+							strong Maintenance and Support - 
+							| the supplier handles backups, upgrades and updates remotely and without visiting the customer's site
+						li
+							strong Environmentally Friendly - 
+							| fiercely debated. Around 60% savings of carbon emissions and in the case of small start-ups up to 90% savings in eco waste
+						li
+							strong Free trials - 
+							| it is easy for the supplier to offer a free-trial to 'lure' new customers and then terminate at the end of the period. This is referred to as "freemium" in some quarters
+					p  
+					p
+						strong Disadvantages of Cloud Computing
+					ol
+						li
+							strong Internet Reliability 
+							| - lack of internet access or slow access can be a major problem
+						li
+							strong Dependence on the Supplier - 
+							| dependent on the supplier for both day-to-day access in addition to updates and maintenance. What happens if the supplier has financial difficulties? What happens if your supplier sub-contracts out some/all of your service?
+						li
+							strong Data Protection and Data Security 
+							| - Who 'owns' your data?
+					p  
+					p
+						strong Cloud Computing ROI
+					p
+						strong Amazon Web Services Capacity-utilisation curve
+					p  
+					p
+						strong 8 business Metrics ROI
+					ol
+						li
+							strong Increase Margin and Cost Control
+							|  - Cloud computing offers the opportunity for cost, revenue and margin advantages
+						li
+							strong Access to business skills and capability improvement
+							|  - Cloud computing enables access to new skills and solutions through cloud sourcing on-demand systems
+						li
+							strong Risk and compliance improvement
+							|  - Cloud computing green capabilities can be leveraged through shared services
+						li
+							strong Speed and Rate of Change
+							|  - keeping up with technological benefits transfers to the service provider. Increased flexibility in scaling IT up or down
+						li
+							strong Optimising Total Cost of Ownership
+							|  - Cloud computing bridges the design-time and run-time divide and optimises service performance
+						li
+							strong Rapid provisioning
+							|  - IT can be expanded as new enterprises emerge
+						li
+							strong Dynamic Usage
+							|  - With either fixed usage volumes or variable functional usage, new innovative consumption model enabled by cloud computing allow a business to consider using IT in a flexible and agile way
+						li
+							strong Enhanced capacity utilisation
+							|  - Cloud avoids over and under-provisioning of IT services to improve smarter business services
+					p
+
+
+	.container
+		.row 
+			.col-xs-6
+				.centered
+					a.btn.btn-default(href="http://localhost:3000", role="button") Cancel
+			.col-xs-6
+				.centered
+					a.btn.btn-primary(href="http://localhost:3000/download", role="button") Done
+
+
+	script(src='https://cdn.quilljs.com/1.2.2/quill.js')
+	script.
+		var toolbarOptions = [
+			[{ 'size': ['small', false, 'large', 'huge'] }],  
+			[{ 'header': [1, 2, 3, 4, 5, 6, false] }],
+			[{ 'font': [] }],
+			['bold', 'italic', 'underline', 'strike'],   
+			[{ 'list': 'ordered'}, { 'list': 'bullet' }], 
+			[{ 'color': [] }, { 'background': [] }],      
+			[{ 'align': [] }],
+			[{ 'indent': '-1'}, { 'indent': '+1' }],   
+			['blockquote', 'code-block'],
+			[{ 'script': 'sub'}, { 'script': 'super' }],      
+			[  'image', 'formula' ],          
+			['clean']                                       
+			];
+		var quill = new Quill('#editor', {
+		modules: {
+			toolbar: toolbarOptions
+		},
+		theme: 'snow'
+		});

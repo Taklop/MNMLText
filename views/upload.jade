@@ -6,14 +6,28 @@ extends layout
 
 block content
 	script(src='javascripts/dropzone.js')
+	script(src ='javascripts/dropaction.js')
 	.container
+		.row
+			.col-xs-12.centered
+				P.description Summarise your lecture slides into text for studying in seconds!
 		.row
 			.col-xs-12
 				.panel.panel-default
 					.panel-body.shadebackground
 						
 						// Drop Zone
-						form.dropzone(type='file', action='/file-upload')
+						form.dropzone#dropzone(type='file', action='file_upload')
 							.dz-message
-								img(src='/images/Drop_File.svg', alt='Please Drop a file Here', style='width:300px;height:300px')
-			
+								i.fa.fa-file-text-o.fa-4x(aria-hidden='true')
+								.bolder
+									p Drop File Here
+									u Click to Select a File
+		.row
+			.centered
+				.col-xs-4
+					img(src='/images/textbox-info.svg', alt='info1')
+				.col-xs-4
+					img(src='/images/filetype-info.svg', alt='info2')
+				.col-xs-4
+					img(src='/images/serverside-info.svg', alt='info3')

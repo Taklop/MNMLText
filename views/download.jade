@@ -4,18 +4,39 @@ block content
 	.container
 		.row
 			.col-xs-12.centered
+				P.description Summarise your lecture slides into text for studying in seconds!
+		.row
+			.col-xs-2
+			.col-xs-4
+				form(data-toggle='validator', role='form')
+					.form.form-horizontal
+						.form-group
+							label.control-label.col-sm-4.des-file File Name:
+							.col-sm-8
+								input.form-control(type='text', value='cloudcomputing', data-error='Please enter file name', required='')
+								.help-block.with-errors
+			.col-xs-6
+				.form.form-horizontal
+					.form-group
+						label.control-label.col-sm-4.des-file File Size:
+						.col-sm-8
+							p.form-control-static.des-file 5.4 kB
+	.row
+	.container
+		.row
+			.col-xs-12.centered
 				.exportzone
 					.third
-						p.congratsText Congratulations! Now you have a great summary, enjoy ;)
+						p.congratsText Congratulations! Your summary is ready to download.
 					.third.dividingBorders
-						button.btnRestart.btn-lg(type='button', value = 'Start Over' onclick="location.href = '/upload';")
+						button.btnRestart.btn-lg(type='button', value = 'Start Over' onclick="location.href = '/';")
 							i.fa.fa-undo(aria-hidden='true')
 							|   Start Over
 					.third
-						button.buttonDownload.pdfButton(type='button', value = 'Download as PDF' onclick="location.href = 'download/pdf';")
+						button.buttonDownload.pdfButton(type='button', value = 'Download as PDF' onclick="location.href = 'pdf';")
 							i.fa.fa-file-pdf-o(aria-hidden='true')
 							|   Download as PDF
-						button.buttonDownload.wordButton(type='button', value = 'Download as Word', onclick="location.href = 'download/word';")
+						button.buttonDownload.wordButton(type='button', value = 'Download as Word', onclick="location.href = 'word';")
 							i.fa.fa-file-word-o(aria-hidden='true')
 							|   Download as Word
 						button.buttonDownload.dropboxButton.squareButton(type='button', value = 'Download as Word', onclick="window.open('https://www.dropbox.com/?landing=cntl')")
