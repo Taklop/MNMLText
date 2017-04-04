@@ -124,3 +124,6 @@ textarea:focus,
 button:focus {
     outline: none;
 }
+h3{
+	color: #5E9CD3;
+}

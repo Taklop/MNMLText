@@ -9,11 +9,11 @@ router.get('/', function(req, res, next)
 
 router.get('/pdf', function(req, res, next)
 {
-	res.download('files/EmpiricalStudies.pdf', 'EmpiricalStudies.pdf');
+	res.download('files/Cloud\ Computing.pdf', 'Cloud\ Computing.pdf');
 });
 router.get('/word', function(req, res, next)
 {
-	res.download('files/EmpiricalStudies.docx', 'EmpiricalStudies.docx');
+	res.download('files/Cloud\ Computing.docx', 'Cloud\ Computing.docx');
 });
 
 module.exports = router;
